@@ -28,7 +28,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+How to use this theme? After you generate a new site running `jekyll new site-name`, you can to follow these steps:
+
+Installing a new theme. If you need more help, click [here](http://jekyllrb.com/docs/themes/#installing-a-theme).
 
 ## Contributing
 
