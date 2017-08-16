@@ -9,18 +9,24 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
+#replace
+gem "jekyll-theme-prettydocs"
+#by
 gem "jekyll-theme-prettydocs"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
+#replace 
+theme: minima
+#by
 theme: jekyll-theme-prettydocs
 ```
 
 And then execute:
 
-    $ bundle
+    $ sudo bundle update
 
 Or install it yourself as:
 
@@ -28,9 +34,17 @@ Or install it yourself as:
 
 ## Usage
 
-How to use this theme? After you generate a new site running `jekyll new site-name`, you can to follow these steps:
+How to use this theme? After you generate a new site running `jekyll new site-name`, you can to follow above steps for instalation.
 
-Installing a new theme. If you need more help, click [here](http://jekyllrb.com/docs/themes/#installing-a-theme).
+Installing a new theme. If you need more help, click [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
+
+## Errors
+
+If show error: *"Liquid Exception: Could not locate the included file 'icon-github.html'..."* you should open *about.md* and remove references the files include of minima theme, like:
+
+```
+{% include icon-github.html username="jekyll" %} /
+```
 
 ## Contributing
 
