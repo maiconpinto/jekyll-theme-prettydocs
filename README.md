@@ -10,7 +10,7 @@ Add this line to your Jekyll site's Gemfile:
 
 ```ruby
 #replace
-gem "jekyll-theme-prettydocs"
+gem "minima"
 #by
 gem "jekyll-theme-prettydocs"
 ```
