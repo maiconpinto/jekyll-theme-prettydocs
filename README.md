@@ -39,13 +39,22 @@ $ jekyll s
 
 Open in your browser `http://localhost:4000`. See the site, with this wonderful theme.
 
-After you install and start, you can to do your changes.
+![](./screenshot.png)
+
+**After you install and start, you can to do your changes.**
 
 ## Customize theme
 
-```shell
-...
+The first thing that you will wnat to change is home page list. So, what you need is simple. Just create your pages, with these attributes:
+
+```yaml
+tags:
+    - cards-section
+excerpt: Support page
+color: purple
+fa-icon: icon_puzzle_alt
 ```
+
 
 ## Contributing
 
