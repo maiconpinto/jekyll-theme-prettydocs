@@ -48,13 +48,29 @@ Open in your browser `http://localhost:4000`. See the site, with this wonderful 
 The first thing that you will wnat to change is home page list. So, what you need is simple. Just create your pages, with these attributes:
 
 ```yaml
-tags:
-    - cards-section
-excerpt: Support page
-color: purple
-fa-icon: icon_puzzle_alt
+cards-section: blue
+title: Title of page
+intro: Intro of page
+icon: icon_gift
 ```
 
+So, with these small attributes into your pages, you can create a list of links in home page. Below, some description about each attribute.
+
+### cards-section
+
+Cards section is usually the color of card. The colors availables is: blue, pink, purple, orange, green, and primary.
+
+### title
+
+The title is title of card. It's the strong text on card.
+
+### intro
+
+The intro is a introdution of card. It's a description about card.
+
+### icon
+
+The icon is icon of card. 600+ FontAwesome icons.
 
 ## Contributing
 
