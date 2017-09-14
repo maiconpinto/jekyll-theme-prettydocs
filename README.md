@@ -45,7 +45,9 @@ Open in your browser `http://localhost:4000`. See the site, with this wonderful 
 
 ## Customize theme
 
-The first thing that you will wnat to change is home page list. So, what you need is simple. Just create your pages, with these attributes:
+### Home Page
+
+The first thing that you will want to change is home page links list. So, what you need is simple. Just create your pages, with these attributes:
 
 ```yaml
 cards-section: blue
@@ -56,21 +58,66 @@ icon: icon_gift
 
 So, with these small attributes into your pages, you can create a list of links in home page. Below, some description about each attribute.
 
-### cards-section
+#### cards-section
 
 Cards section is usually the color of card. The colors availables is: blue, pink, purple, orange, green, and primary.
 
-### title
+#### title
 
 The title is title of card. It's the strong text on card.
 
-### intro
+#### intro
 
 The intro is a introdution of card. It's a description about card.
 
-### icon
+#### icon
 
 The icon is icon of card. 600+ FontAwesome icons.
+
+### Header
+
+Default header.
+
+{% include header.html %}
+
+Custom header, with no breadcrumb.
+
+{% include header.html
+    icon="fa fa-hashtag"
+    title="Title"
+    bold="White"
+    breadcrumb=""
+%}
+
+Below, some description about all attributes.
+
+#### icon
+
+The icon is icon of page. 600+ FontAwesome icons.
+
+#### title
+
+The title is title of page. It's the same color of page.
+
+#### bold
+
+The bold is white title of page.
+
+#### breadcrumb
+
+The breadcrumb usually show or hide the section of breadcrumb. Default value is 'true', but if you set '' or 'false' you don't show breadcrumb more.
+
+#### breadcrumb-home-link
+
+The link to home link.
+
+#### breadcrumb-home-title
+
+The title of Home page link.
+
+#### breadcrumb-active
+
+The breadcrumb-active usually show or hide the second part of breadcrumb.
 
 ## Contributing
 
