@@ -114,6 +114,15 @@ The title of Home page link.
 
 The breadcrumb-active usually show or hide the second part of breadcrumb.
 
+Example with others attributes.
+
+{% include header.html
+    icon="fa fa-hashtag"
+    title="Title"
+    bold="White"
+    breadcrumb=""
+%}
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/maiconpinto/jekyll-theme-prettydocs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
