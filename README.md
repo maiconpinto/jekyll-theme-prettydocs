@@ -82,12 +82,7 @@ Default header.
 
 Custom header, with no breadcrumb.
 
-{% include header.html
-    icon="fa fa-hashtag"
-    title="Title"
-    bold="White"
-    breadcrumb=""
-%}
+{% include breadcrumb="" %}
 
 Below, some description about all attributes.
 
