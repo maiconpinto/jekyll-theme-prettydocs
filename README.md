@@ -123,6 +123,62 @@ Example with others attributes.
     breadcrumb=""
 %}
 
+### Promo Block
+
+Default.
+
+{% include promo-block.html %}
+
+Custom promo block.
+
+{% include
+    title="My Project"
+    figure="/assets/images/demo/appkit-account-drive-thumb.jpg"
+    figure-link="http://maiconpinto.com.br"
+%}
+
+Below, some description about all attributes.
+
+#### icon
+
+The icon is icon of promo block. 600+ FontAwesome icons.
+
+#### title
+
+The title is title of promo block.
+
+#### link-title
+
+The link-title is the URL of title of promo block.
+
+#### figure
+
+The figure is the URL of image of promo block.
+
+#### figure-link
+
+The figure-link is the link image of promo block.
+
+#### figure-title
+
+The figure-title is the title of alt attribute of image.
+
+#### content
+
+The content is description of promo block.
+
+#### content-title
+
+The content-title is the title of content. It's the strong text.
+
+#### author
+
+The author is author name.
+
+#### author-link
+
+The author-link is URL to author.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/maiconpinto/jekyll-theme-prettydocs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
