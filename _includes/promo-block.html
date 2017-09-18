@@ -4,10 +4,10 @@
     {% assign icon = 'fa fa-heart' %}
 {% endif %}
 
-{% if include.link-title != null %}
-    {% assign link-title = include.link-title %}
+{% if include.title-link != null %}
+    {% assign title-link = include.title-link %}
 {% else %}
-    {% assign link-title = 'https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm' %}
+    {% assign title-link = 'https://wrapbootstrap.com/theme/appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm' %}
 {% endif %}
 
 {% if include.title != null %}
@@ -63,7 +63,7 @@
 <div id="promo-block" class="promo-block">
     <div class="container">
         <div class="promo-block-inner">
-            <h3 class="promo-title text-center"><i class="{{ icon }}"></i> <a href="{{ link-title }}" target="_blank">{{ title }} </a></h3>
+            <h3 class="promo-title text-center"><i class="{{ icon }}"></i> <a href="{{ title-link }}" target="_blank">{{ title }} </a></h3>
             <div class="row">
                 <div class="figure-holder col-md-5 col-sm-6 col-xs-12">
                     <div class="figure-holder-inner">
