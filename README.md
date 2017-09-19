@@ -189,6 +189,37 @@ Once installed, you will copy the below line, and paste into body of your page.
 div.doc-wrapper>div.container>((div#doc-header.doc-header.text-center>(h1.doc-title>i.icon.fa.fa-paper-plane{Quick Start})+(div.meta>i.fa.fa-clock-o{Last Update on}))+(div.doc-body>((div.doc-content>div.content-inner>section.doc-section#download-section>(h2.section-title{Download})+(div.section-block))+(div.doc-sidebar.hidden-xs>nav#doc-menu>li>a.scrollto[href=#download-section]{Download}))))
 ```
 
+## A complete example of page
+
+```html
+---
+layout: green
+title: Page example
+permalink: /example-page/
+cards-section: green
+title: Title of page
+intro: Intro of page
+icon: icon_gift
+---
+
+{% include header.html
+    icon="fa fa-hashtag"
+    title="Quick Start"
+    bold="Page"
+%}
+
+div.doc-wrapper>div.container>((div#doc-header.doc-header.text-center>(h1.doc-title>i.icon.fa.fa-paper-plane{Quick Start})+(div.meta>i.fa.fa-clock-o{Last Update on}))+(div.doc-body>((div.doc-content>div.content-inner>section.doc-section#download-section>(h2.section-title{Download})+(div.section-block{div.doc-wrapper>div.container>((div#doc-header.doc-header.text-center>(h1.doc-title>i.icon.fa.fa-paper-plane{Quick Start})+(div.meta>i.fa.fa-clock-o{Last Update on}))+(div.doc-body>((div.doc-content>div.content-inner>section.doc-section#download-section>(h2.section-title{Download})+(div.section-block))+(div.doc-sidebar.hidden-xs>nav#doc-menu>li>a.scrollto[href=#download-section]{Download}))))}))+(div.doc-sidebar.hidden-xs>nav#doc-menu>li>a.scrollto[href=#download-section]{Download}))))
+
+{% include promo-block.html
+    title="My Project"
+    figure="/assets/images/demo/appkit-account-drive-thumb.jpg"
+    figure-link="http://maiconpinto.com.br"
+    author="Maicon Pinto"
+    author-link="http://maiconpinto.com.br"
+%}
+```
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/maiconpinto/jekyll-theme-prettydocs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
