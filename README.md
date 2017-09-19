@@ -147,9 +147,9 @@ The icon is icon of promo block. 600+ FontAwesome icons.
 
 The title is title of promo block.
 
-#### link-title
+#### title-link
 
-The link-title is the URL of title of promo block.
+The title-link is the URL of title of promo block.
 
 #### figure
 
@@ -178,6 +178,16 @@ The author is author name.
 #### author-link
 
 The author-link is URL to author.
+
+### Content of Page
+
+I'd like to do it the easy way, but for now I've only found this way.
+You need to have the Emmet plugin installed in your editor.
+Once installed, you will copy the below line, and paste into body of your page.
+
+```html
+div.doc-wrapper>div.container>((div#doc-header.doc-header.text-center>(h1.doc-title>i.icon.fa.fa-paper-plane{Quick Start})+(div.meta>i.fa.fa-clock-o{Last Update on}))+(div.doc-body>((div.doc-content>div.content-inner>section.doc-section#download-section>(h2.section-title{Download})+(div.section-block))+(div.doc-sidebar.hidden-xs>nav#doc-menu>li>a.scrollto[href=#download-section]{Download}))))
+```
 
 ## Contributing
 
