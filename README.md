@@ -219,6 +219,8 @@ div.doc-wrapper>div.container>((div#doc-header.doc-header.text-center>(h1.doc-ti
 %}
 ```
 
+![](./assets/images/demo/a-complete-example-of-page.png)
+
 
 ## Contributing
 
