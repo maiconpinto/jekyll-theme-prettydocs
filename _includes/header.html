@@ -1,17 +1,70 @@
+{% if include.icon != null %}
+    {% assign icon = include.icon %}
+{% else %}
+    {% assign icon = 'icon_documents_alt icon' %}
+{% endif %}
+
+{% if include.title != null %}
+    {% assign title = include.title %}
+{% else %}
+    {% assign title = 'Pretty' %}
+{% endif %}
+
+{% if include.bold != null %}
+    {% assign bold = include.bold %}
+{% else %}
+    {% assign bold = 'Docs' %}
+{% endif %}
+
+{% if include.breadcrumb != null %}
+    {% assign breadcrumb = include.breadcrumb %}
+{% else %}
+    {% assign breadcrumb = 'true' %}
+{% endif %}
+
+{% if include.breadcrumb-home-link != null %}
+    {% assign breadcrumb-home-link = include.breadcrumb-home-link %}
+{% else %}
+    {% assign breadcrumb-home-link = 'index.html' %}
+{% endif %}
+
+{% if include.breadcrumb-home-title != null %}
+    {% assign breadcrumb-home-title = include.breadcrumb-home-title %}
+{% else %}
+    {% assign breadcrumb-home-title = 'Home' %}
+{% endif %}
+
+{% if include.breadcrumb-active != null %}
+    {% assign breadcrumb-active = include.breadcrumb-active %}
+{% else %}
+    {% assign breadcrumb-active = 'Quick Start' %}
+{% endif %}
+
+{% if breadcrumb-active !=  '' %}
+    {% assign breadcrumb-active-hide = false %}
+{% else %}
+    {% assign breadcrumb-active-hide = true %}
+{% endif %}
+
 <!-- ******Header****** -->
 <header id="header" class="header">
     <div class="container">
         <div class="branding">
             <h1 class="logo">
-                <a href="index.html">
-                    <span aria-hidden="true" class="icon_documents_alt icon"></span>
-                    <span class="text-highlight">Pretty</span><span class="text-bold">Docs</span>
+                <a href="{{ page.url }}">
+                    <span aria-hidden="true" class="{{ icon }}"></span>
+                    <span class="text-highlight">{{ title }}</span>
+                    <span class="text-bold">{{ bold }}</span>
                 </a>
             </h1>
         </div><!--//branding-->
+        {% if breadcrumb == 'true' %}
         <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Showcase</li>
+            <li><a href="{{ breadcrumb-home-link }}">{{ breadcrumb-home-title }}</a></li>
+            {%if breadcrumb-active-hide == false %}
+                <li class="active">{{ breadcrumb-active }}</li>
+            {% endif %}
         </ol>
+        {% endif %}
     </div><!--//container-->
 </header><!--//header-->
