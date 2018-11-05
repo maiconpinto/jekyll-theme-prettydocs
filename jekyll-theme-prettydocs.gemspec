@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-prettydocs"
-  spec.version       = "0.0.4"
+  spec.version       = "1.0.0"
   spec.authors       = ["Maicon Pinto"]
   spec.email         = ["maiconsilva.pinto@gmail.com"]
 
   spec.summary       = "Jekyll Theme PrettyDocs"
-  spec.homepage      = "http://maiconpinto.com.br"
+  spec.homepage      = "https://github.com/maiconpinto/jekyll-theme-prettydocs"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
