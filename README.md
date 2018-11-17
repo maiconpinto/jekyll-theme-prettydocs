@@ -58,6 +58,7 @@ This is the idea.
 
 ```
 \_includes
+    cards-section.html
     footer.html
     home.html
     promo-block.html
@@ -119,3 +120,6 @@ footer#footer.footer.text-center>div.container>small.copyright(({Designed with}>
 
 For more details, click in [Tips Page](https://github.com/maiconpinto/jekyll-theme-prettydocs/wiki/Tips-page).
 
+# Posts and Default Layouts
+
+Extends Page Layout.
