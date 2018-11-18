@@ -1,4 +1,10 @@
-{% if site.description != false %}
+{% if site.cards_title %}
+    {% assign cards_title = site.cards_title %}
+{% else %}
+    {% assign cards_title = 'Getting started is easy!'; %}
+{% endif %}
+
+{% if site.description %}
     {% assign description = site.description %}
 {% else %}
     {% assign description = 'Welcome to prettyDocs. This landing page is an example of how you can use a card view to present segments of your documentation. You can customise the icon fonts based on your needs.'; %}
