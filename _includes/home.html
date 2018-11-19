@@ -32,7 +32,7 @@
                 {% if site.tagline %}
                     {{ site.tagline }}
                 {% elsif site.tagline_subtitle %}
-                    <h1> {{ site.tagline_subtitle }} </h1>
+                    <h2> {{ site.tagline_subtitle }} </h2>
                 {% else %}
                     <p>Free Bootstrap 4 theme for your project documentation</p>
                     <p>Designed with <i class="fas fa-heart"></i> for developers</p>
@@ -42,19 +42,30 @@
             {% if site.socials != false %}
             <div class="social-container">
                 {% if site.socials %}
+                    {% if site.social_github != false %}
                     <div class="github-btn mb-2">
                         {% if site.github_repository %}
                         <a class="github-button" href="https://github.com/{{ site.github_username }}/{{ site.github_repository }}" data-size="large" aria-label="Star {{ site.github_username }}/{{ site.github_repository }} on GitHub">Star</a>
                         {% endif %}
                         <a class="github-button" href="https://github.com/{{ site.github_username }}" data-size="large" aria-label="Follow @{{ site.github_username }} on GitHub">Follow @{{ site.github_username }}</a>
                     </div>
+                    {% endif %}
+                    {% if site.social_twitter != false %}
                     <!-- Replace with your Twitter Button -->
                     <div class="twitter-tweet">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.twitter_share }}" data-via="{{ twitter_username }}">Tweet</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.twitter_share }}" data-via="{{ site.twitter_username }}">Tweet</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </div><!--//tweet-->
-                    <!-- Replace with your Facebook Button -->
-                    <div class="fb-like" data-href="{{ site.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>            
+                    {% endif %}
+                    {% if site.social_facebook != false %}
+                        {% if site.facebook_like %}
+                            {% assign facebook_like = site.facebook_like %}
+                        {% else %}
+                            {% assign facebook_like = site.url %}
+                        {% endif %}
+                        <!-- Replace with your Facebook Button -->
+                        <div class="fb-like" data-href="{{ facebook_like }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>            
+                    {% endif %}
                 {% else %}
                     <!-- Replace with your Github Button -->
                     <div class="github-btn mb-2">

@@ -91,7 +91,7 @@
 {% if site.card_showcase_title %}
     {% assign card_showcase_title = site.card_showcase_title %}                    
 {% else %}
-    {% assign card_showcase_title = 'FAQs' %}
+    {% assign card_showcase_title = 'Showcase' %}
 {% endif %}
 
 {% if site.card_showcase_intro %}
@@ -103,13 +103,13 @@
 {% if site.card_showcase_link %}
     {% assign card_showcase_link = site.card_showcase_link %}                    
 {% else %}
-    {% assign card_showcase_link = 'faqs' %}
+    {% assign card_showcase_link = 'showcase' %}
 {% endif %}
 
 {% if site.card_license_title %}
     {% assign card_license_title = site.card_license_title %}                    
 {% else %}
-    {% assign card_license_title = 'FAQs' %}
+    {% assign card_license_title = 'License' %}
 {% endif %}
 
 {% if site.card_license_intro %}
@@ -121,7 +121,7 @@
 {% if site.card_license_link %}
     {% assign card_license_link = site.card_license_link %}                    
 {% else %}
-    {% assign card_license_link = 'faqs' %}
+    {% assign card_license_link = 'license' %}
 {% endif %}
 
 
@@ -173,7 +173,7 @@
                 </div><!--//item-inner-->
             </div><!--//item-->
             {% endif %}
-            {% if site.card_faq != false %}
+            {% if site.card_faqs != false %}
             <div class="item item-purple col-lg-4 col-6">
                 <div class="item-inner">
                     <div class="icon-holder">
